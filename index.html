@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>German Learning Resources</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;    /* Deep Navy */
+      --secondary-color: #3498db;  /* Vibrant Blue */
+      --accent-color: #e67e22;     /* Warm Orange */
+      --light-bg: #f8f9fa;         /* Light Gray */
+      --text-dark: #2c3e50;
+      --text-light: #ecf0f1;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif; /* Modern, clean font */
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif; /* Modern, clean font */
+      font-size: 2.3rem;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding-top: 30px;
+      margin: 0;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    .resource-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--secondary-color);
+    }
+
+    .resource-card h3 {
+      color: var(--primary-color);
+      margin: 1rem 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .resource-card p {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .resource-card a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--secondary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .resource-card a:hover {
+      background: #2980b9;
+      box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-dark);
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+        padding: 1rem;
+      }
+
+      .logo {
+        font-size: 2rem;
+      }
+
+      .resource-grid {
+        grid-template-columns: 1fr; /* Stack cards on mobile */
+      }
+
+      .resource-card {
+        padding: 1rem;
+      }
+
+      .resource-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .resource-card p {
+        font-size: 0.9rem;
+      }
+
+      .resource-card a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  <!-- Add Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Unsere Kleine Familie </div>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Märchen</h3>
+          <p>Explore German fairy tales</p>
+          <a href="https://samird.pages.dev">Explore</a>
+        </div>
+        <div class="resource-card">
+          <h3>Aussprache</h3>
+          <p>Pronunciation guide</p>
+          <a href="https://youglish.com/german">Learn</a>
+        </div>
+        <div class="resource-card">
+          <h3>Testen</h3>
+          <p>Practice tests</p>
+          <a href="https://deutschquiz.pages.dev">Practice</a>
+        </div>
+        <div class="resource-card">
+          <h3>Hören</h3>
+          <p>Listening exercises</p>
+          <a href="https://open.spotify.com/show/5yZQlynZk18XToT4r5bbZw?si=MqS_elADRw6l9sX11yS6mg">Listen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Samir Abakrim ❤️ Unsere Kleine Familie</p>
+  </footer>
+</body>
+</html>
